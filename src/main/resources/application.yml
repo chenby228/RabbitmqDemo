@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: rabbitmq-provider
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 10.134.82.183
+    port: 5672
+    username: admin
+    password: admin
+    #虚拟host 可以不设置,使用server默认host
+    virtual-host: /
+    listener:
+      direct:
+        auto-startup: true
